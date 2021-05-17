@@ -1,0 +1,867 @@
+@font-face {
+  font-family: "SF-Display-Regular";
+  src: url("assets/SF-UI-Display-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Display-Bold";
+  src: url("assets/SF-UI-Display-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: SF-Display-Regular;
+}
+
+
+/* <---Nav Bar-----> */
+.navbar {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  position: sticky;
+  top: 0px;
+
+}
+.navbar > ul {
+    list-style-type: none;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* background-color:red; */
+}
+.navbar >ul>li {
+    padding-left:35px;
+    padding-right: 35px;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+
+}
+.navbar >ul>li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#apple-icon {
+    height: 22px;
+}
+#search-icon {
+    height: 22px;
+}
+#bag-icon {
+    height: 30px;
+}
+#play-icon {
+  height: 28px;
+  position: relative;
+  top: 8px;
+}
+
+/* <----hero section------> */
+.section {
+    width: 100vw;
+    height: 95vh;
+    overflow:hidden;
+    display:flex;
+    background-color:rgb(0, 0, 0);
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.wrapper {
+  
+  /* transform: translateY(50%); */
+  height: 300vh;
+  background-color: rgb(0, 0, 0);
+}
+.container {
+  transform: translateX(-44%);
+  height: 300vh;
+   width: 500vw;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  /* background-color:blue; */
+}
+
+.main_card {
+  color : black;
+  /* margin-top: 350vh; */
+  /* background-color: green; */
+  height: 45vh;
+  width: 40vw;
+  transition: transform 8s ease-out;
+  position: relative;
+  bottom: 200px;
+}
+.main_card > ul >li {
+  list-style-type: none;
+  padding: 5px;
+  color: white;
+  transition: all 1s;
+}
+#list-item2,#list-item3,#list-item4 {
+  font-size: 60px;
+}
+#list-item1,#list-item5,#play-icon {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+}
+#list-item1:hover,#list-item5:hover,#play-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+} 
+/* <-------CARDS---------> */
+.row1,.row2,.row3,.row4,.row5 {
+  display: flex;
+  /* padding: 50px; */
+  background-color: rgb(0, 0, 0);
+  margin: 20px;
+  margin-top: 250px;
+}
+.col1,.col2,.col3,.col4,.col5,.col6{
+  background-color: rgb(0, 0, 0);
+  margin-left: 350px;
+  height: 300px;
+  
+}
+.row1,.row2,.row3,.row4,.row5{
+  height: 450px;
+}
+#img7,#img6,#img5 {
+  width: 500px
+}
+/* <----ROW 3 COL 4------> */
+.row3 > .col4 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/gloria-steinem__dl3sa6tel8a6_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 287px;
+  width: 230px;
+  text-align: left;
+  line-height:25px;
+  cursor: pointer;
+  transition: opacity 0.75s;
+  transition: transform 8s ease-out;
+  position: relative;
+  top: 100px;
+}
+.row3 > .col4 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+
+}
+.row3 .col4:hover {
+  opacity: 0.75;
+}
+.row3 .col4:hover span{
+  opacity: 1;
+}
+/* <----ROW 3 COL 5------> */
+.row3 > .col5 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/kwak_sin-ae__ghfx9bx5kkmm_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 435px;
+  height: 310px;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row3 > .col5 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+
+}
+.row3 .col5:hover {
+  opacity: 0.75;
+}
+.row3 .col5:hover span{
+  opacity: 1;
+}
+/* <----ROW 3 COL 2------> */
+.row3 > .col2 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/alicia-keys__c3pjkxx9dzyq_medium_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 391px;
+  height: 281px;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 200px;
+}
+.row3 > .col2 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+
+}
+.row3 .col2:hover {
+  opacity: 0.75;
+}
+.row3 .col2:hover span{
+  opacity: 1;
+}
+/* <----ROW 3 COL 1------> */
+.row3 > .col1 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/lilly-singh__ghva3f86vhqq_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 505px;
+  height: 310px;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 150px;
+}
+.row3 > .col1 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row3 .col1:hover {
+  opacity: 0.75;
+}
+.row3 .col1:hover span{
+  opacity: 1;
+}
+/* <----ROW 2 COL 1------> */
+.row2 > .col1 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/marie-kondo__00asv1ins1u6_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 347px;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 250px;
+}
+.row2 > .col1 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row2 .col1:hover {
+  opacity: 0.75;
+}
+.row2 .col1:hover span{
+  opacity: 1;
+}
+/* <----ROW 2 COL 2------> */
+.row2 > .col2 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/tarana-burke__goh7m5clzzqu_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 300px;
+}
+.row2 > .col2 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row2 .col2:hover {
+  opacity: 0.75;
+}
+.row2 .col2:hover span{
+  opacity: 1;
+}
+/* <----ROW 2 COL 3------> */
+.row2 > .col3 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/black-mamba__usn0d49zd5uu_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 100px;
+}
+.row2 > .col3 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row2 .col3:hover {
+  opacity: 0.75;
+}
+.row2 .col3:hover span{
+  opacity: 1;
+}
+/* <----ROW 2 COL 4------> */
+.row2 > .col4 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/lady-gaga__dy3wkzhtjf6u_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 515px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row2 > .col4 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row2 .col4:hover {
+  opacity: 0.75;
+}
+.row2 .col4:hover span{
+  opacity: 1;
+}
+/* <----ROW 2 COL 5------> */
+.row2 > .col5 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/huang-ningning__fz13ju4jq0q6_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  width: 515px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  /* top: 200px; */
+}
+.row2 > .col5 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row2 .col5:hover {
+  opacity: 0.75;
+}
+.row2 .col5:hover span{
+  opacity: 1;
+}
+/* <----ROW 1 COL 1------> */
+.row1 > .col1 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/amani-al-khatahtbeh__fblc77mf4fyy_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row1 > .col1 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row1 .col1:hover {
+  opacity: 0.75;
+}
+.row1 .col1:hover span{
+  opacity: 1;
+}
+/* <----ROW 1 COL 2------> */
+.row1 > .col2 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/diane-von-furstenberg__cf7w3zwnufbm_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+
+}
+.row1 > .col2 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row1 .col2:hover {
+  opacity: 0.75;
+}
+.row1 .col2:hover span{
+  opacity: 1;
+}
+/* <----ROW 1 COL 3------> */
+.row1 > .col3 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/elizabeth-banks__d6trv93kdkya_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  /* bottom: 200px; */
+}
+.row1 > .col3 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row1 .col3:hover {
+  opacity: 0.75;
+}
+.row1 .col3:hover span{
+  opacity: 1;
+}
+/* <----ROW 1 COL 4------> */
+.row1 > .col4 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/victoria-monet__jzcey84uldqy_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 100px;
+}
+.row1 > .col4 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row1 .col4:hover {
+  opacity: 0.75;
+}
+.row1 .col4:hover span{
+  opacity: 1;
+}
+/* <----ROW 4 COL 1------> */
+.row4 > .col1 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/greta-gerwig__dr7z1ewoypme_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row4 > .col1 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row4 .col1:hover {
+  opacity: 0.75;
+}
+.row4 .col1:hover span{
+  opacity: 1;
+}
+/* <----ROW 4 COL 2------> */
+.row4 > .col2 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/malala-yousafzai__b2olbx1ncxte_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 200px;
+}
+.row4 > .col2 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row4 .col2:hover {
+  opacity: 0.75;
+}
+.row4 .col2:hover span{
+  opacity: 1;
+}
+/* <----ROW 4 COL 3------> */
+.row4 > .col3 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/dj-switch__gi7iu17ztkuy_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row4 > .col3 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row4 .col3:hover {
+  opacity: 0.75;
+}
+.row4 .col3:hover span{
+  opacity: 1;
+}
+/* <----ROW 4 COL 4------> */
+.row4 > .col4 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/megan-rapinoe-shannon-boxx__jl7aer5zms2u_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 200px;
+}
+.row4 > .col4 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row4 .col4:hover {
+  opacity: 0.75;
+}
+.row4 .col4:hover span{
+  opacity: 1;
+}
+/* <----ROW 5 COL 1------> */
+.row5 > .col1 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/audrey-gelman__glfhpix3skey_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+}
+.row5 > .col1 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row5 .col1:hover {
+  opacity: 0.75;
+}
+.row5 .col1:hover span{
+  opacity: 1;
+}
+/* <----ROW 5 COL 2------> */
+.row5 > .col2 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/ava-duvernay__dv13gzlv2uie_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:600px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 200px;
+}
+.row5 > .col2 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row5 .col2:hover {
+  opacity: 0.75;
+}
+.row5 .col2:hover span{
+  opacity: 1;
+}
+/* <----ROW 5 COL 3------> */
+.row5 > .col3 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/olivia-wilde__cus8ncwx156q_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:250px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  /* bottom: 200px; */
+}
+.row5 > .col3 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row5 .col3:hover {
+  opacity: 0.75;
+}
+.row5 .col3:hover span{
+  opacity: 1;
+}
+/* <----ROW 5 COL 4------> */
+.row5 > .col4 {
+  background-image: url(https://www.apple.com/v/home/b/images/behind-the-mac-takeover/aliona-doletskaya__ehoy7at2u72a_large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:450px;
+  background-size: cover;
+  text-align: left;
+  line-height:25px;
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  position: relative;
+  top: 200px;
+}
+.row5 > .col4 >span {
+  /* background-color: blue; */
+  position: relative;
+  top: 250px;
+  right: 70px;
+  font-size: 16px;
+  opacity: 0;
+  color: rgb(185, 185, 185);
+  transition: opacity 1.75s;
+  transition: transform 8s ease-out;
+  cursor: pointer;
+  
+}
+.row5 .col4:hover {
+  opacity: 0.75;
+}
+.row5 .col4:hover span{
+  opacity: 1;
+}
+
+
+
+
+
