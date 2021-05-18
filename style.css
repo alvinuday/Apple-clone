@@ -83,7 +83,7 @@
   background-color: rgb(0, 0, 0);
 }
 .container {
-  transform: translateX(-44%);
+  transform: translateX(-43%);
   height: 300vh;
    width: 500vw;
   text-align:center;
@@ -96,6 +96,7 @@
 
 .main_card {
   color : black;
+  margin-left: -100px;
   /* margin-top: 350vh; */
   /* background-color: green; */
   height: 45vh;
@@ -133,7 +134,7 @@
 }
 .col1,.col2,.col3,.col4,.col5,.col6{
   background-color: rgb(0, 0, 0);
-  margin-left: 350px;
+  margin-left: 200px;
   height: 300px;  
 }
 
@@ -158,7 +159,9 @@
   transition: opacity 0.75s;
   transition: transform 8s ease-out;
   position: relative;
-  top: 100px;
+  bottom: 100px;
+  right: 100px;
+
 }
 .row3 > .col4 >span {
   /* background-color: blue; */
@@ -230,6 +233,7 @@
   cursor: pointer;
   position: relative;
   top: 200px;
+  left: 300px;
 }
 .row3 > .col2 >span {
   /* background-color: blue; */
@@ -331,7 +335,8 @@
   transition: transform 8s ease-out;
   cursor: pointer;
   position: relative;
-  bottom: 300px;
+  top : 300px;
+  left: 100px;
 }
 .row2 > .col2 >span {
   /* background-color: blue; */
@@ -671,7 +676,8 @@
   transition: transform 8s ease-out;
   cursor: pointer;
   position: relative;
-  bottom: 200px;
+  bottom: 100px;
+  left: 100px;
 }
 .row4 > .col3 >span {
   /* background-color: blue; */
