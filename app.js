@@ -1,5 +1,7 @@
 const el = document.querySelector(".main_card");
 const cont = document.querySelector(".container");
+const image =  document.querySelector("#art1_img");
+image.style.filter = `grayscale(100%)`;
 
 
 const img1 = document.querySelector("#img1")
@@ -58,5 +60,18 @@ function handleMouseMove(event) {
 
     
 
+}
+
+window.onscroll = () => {
+    if (
+      document.documentElement.scrollTop >= 300 &&
+      document.documentElement.scrollTop <=900
+    )
+    {   
+        percentage =((document.documentElement.scrollTop-300)/200);
+        image.style.filter = `grayscale(${2-percentage})`
+        console.log('image visible')
+        console.log("hello scroll", document.documentElement.scrollTop);
+    }
 }
 
