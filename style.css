@@ -1099,6 +1099,9 @@ input {
   margin-bottom: 2rem;
 
 }
+input:focus {
+  outline:none;
+}
 
 
 
