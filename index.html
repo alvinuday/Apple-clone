@@ -12,18 +12,38 @@
   <body>
     <nav class="navbar">
       <ul class="nav-list">
-        <li><img id="apple-icon" src="assets/apple.svg" alt="no" /></li>
-        <li>Mac</li>
-        <li>iPad</li>
-        <li>iPhone</li>
-        <li>Watch</li>
-        <li>TV</li>
-        <li>Music</li>
-        <li>Support</li>
-        <li><img id="search-icon" src="assets/search.svg" alt="search" /></li>
-        <li><img id="bag-icon" src="assets/bag.png" alt="bag" /></li>
+        <li class="nav-secondary"><div onclick="clicked()" class="menu-btn">
+                <div class="burger-btn" id="ham-btn" ></div>
+            </div></li>
+        <li class="nav-secondary"><img id="apple-icon" src="assets/apple.svg" alt="no" /></li>
+        <li class="nav-secondary"><img id="bag-icon" src="assets/bag.png" alt="bag" /></li>
+        <li class="nav-primary"><img id="apple-icon" src="assets/apple.svg" alt="no" /></li>
+        <li class="nav-primary">Mac</li>
+        <li class="nav-primary">iPad</li>
+        <li class="nav-primary">iPhone</li>
+        <li class="nav-primary">Watch</li>
+        <li class="nav-primary">TV</li>
+        <li class="nav-primary">Music</li>
+        <li class="nav-primary">Support</li>
+        <li class="nav-primary"><img id="search-icon" src="assets/search.svg" alt="search" /></li>
+        <li class="nav-primary"><img id="bag-icon" src="assets/bag.png" alt="bag" /></li>
       </ul>
     </nav>
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <ul class="nav-secondary-list">
+      <li class="nav-secondary-items"><input type="text" name="Search" id="searchBox" placeholder=" &#128269; Search"></li>
+        <li class="nav-secondary-items">Mac</li>
+        <li class="nav-secondary-items">iPad</li>
+        <li class="nav-secondary-items">iPhone</li>
+        <li class="nav-secondary-items">Watch</li>
+        <li class="nav-secondary-items">TV</li>
+        <li class="nav-secondary-items">Music</li>
+        <li class="nav-secondary-items">Support</li>
+      </ul>
+  </div>
+</div>
 
     <section class="section" id="section1">
       <div class="wrapper">
@@ -85,7 +105,7 @@
     <section class="section2">
       <article class="article1">
         <div class="art1" id="art1_heading">Get involved.</div>
-        <div class="art1" id="art1_img"><img src="https://www.apple.com/v/home/b/images/behind-the-mac-takeover/she-creates/she-creates__wb06lpk2n4yq_large_2x.jpg" alt="image" width="820px"></div>
+        <div class="art1" id="art1_img"><img id="greyImage" src="https://www.apple.com/v/home/b/images/behind-the-mac-takeover/she-creates/she-creates__wb06lpk2n4yq_large_2x.jpg" alt="image"></div>
         <div class="art1" id="art1_subheading">Today at Apple — She Creates</div>
         <div class="art1" id="art1_detail">In celebration of International Women’s Day, from March 1 through 31 discover how female creativity can empower communities. Join hands-on sessions using iPad, iPhone, and Mac to connect, share ideas, and explore new perspectives that can spark change.</div>
         <div class="art1" id="button"><button class="signup">Sign up</button></div>

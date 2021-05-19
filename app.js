@@ -2,6 +2,9 @@ const el = document.querySelector(".main_card");
 const cont = document.querySelector(".container");
 const image =  document.querySelector("#art1_img");
 image.style.filter = `grayscale(100%)`;
+const menuBtn = document.getElementsByClassName("menu-btn");
+let menuOpen = false;
+var overlay = document.querySelector(".overlay");
 
 
 const img1 = document.querySelector("#img1")
@@ -74,4 +77,20 @@ window.onscroll = () => {
         console.log("hello scroll", document.documentElement.scrollTop);
     }
 }
+function clicked() {
+    if (!menuOpen) {
+        menuBtn[0].classList.add('open');
+        menuOpen=true;
+       overlay.style.height = "100%";
+        
+    }
+    else {
+        menuBtn[0].classList.remove("open");
+        menuOpen = false;
+        overlay.style.height = "0%";
+    }
+    console.log("hello");
+    
+};
+
 
